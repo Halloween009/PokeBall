@@ -29,6 +29,14 @@ h1 {
   padding: 0;
   width: fit-content;
 }
+.cardContainer {
+  display: flex;
+  background-color: skyblue;
+  margin: 20px 0;
+}
+.pokemonCardInfo {
+  border: 5px solid black;
+}
 .pokemonName {
   -webkit-text-stroke: 2px black;
 }
@@ -45,9 +53,24 @@ header {
   height: 100px;
   transform: translateX(15px);
 }
-.pokemonCard {
+.pokemonCardInfo {
   display: flex;
   flex-direction: column;
+  border: 10px solid black;
+  margin-left: -10px;
+}
+
+.pokemonCardInfo:first-child {
+  margin-left: 0;
+}
+.modal {
+  position: absolute;
+  top: 20%;
+  left: 45%;
+  background: skyblue;
+  border: 10px solid black;
+  width: 300px;
+  font-size: 20px;
 }
 
 .pokemonImg {
